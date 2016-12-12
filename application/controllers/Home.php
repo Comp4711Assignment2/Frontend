@@ -27,9 +27,9 @@ class Home extends Application{
         $totalOfSuppliesAvailable = 0;
         $suppliesCount = 0;
         $count = 0; 
-        foreach ($supplies as $supply)
-        {
-            foreach($supply as $item) { 
+        foreach ($supplies as $supply) 
+        { 
+            foreach($supply as $item) {    
                 if($item->quantity > 0) { 
                     $suppliesCount++; 
                 }
