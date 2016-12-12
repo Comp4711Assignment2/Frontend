@@ -14,7 +14,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
     <!--REQUIRED STYLE SHEETS-->
-    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <!-- BOOTSTRAP CORE STYLE CSS --> 
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css" />
     <!-- FONTAWESOME STYLE CSS -->
     <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"/>
@@ -26,6 +26,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
     <!-- GOOGLE FONT -->
     <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans' />
+    <title>Hair Salon</title>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -36,7 +37,6 @@
 <body>
          <!-- NAV SECTION -->
          <div class="navbar navbar-inverse navbar-fixed-top">
-       
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -44,7 +44,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-            
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -62,7 +61,6 @@
     
   <!--HOME SECTION-->
     <div id="home-sec">
-
     <div class="container"  >
         <div class="row text-center">
             <div  class="col-md-12" > 

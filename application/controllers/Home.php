@@ -21,19 +21,20 @@ class Home extends Application{
         
     public function index() {
 
-        $this->data['pagebody'] = 'home';
+        $this->data['pagebody'] = 'Home';
 
         $supplies = $this->Supplies->all();
         $totalOfSuppliesAvailable = 0;
         $suppliesCount = 0;
-        
-        foreach ($supplies as $supply)
-        {
-            $totalOfSuppliesAvailable += (($supply['receivingCost'] / $supply['receivingUnit']) * $supply['quantity']);
-            
-            if ($supply['quantity'] > 0) {
-                $suppliesCount++;
-            }
+        $count = 0; 
+        foreach ($supplies as $supply) 
+        { 
+            foreach($supply as $item) {    
+                if($item->quantity > 0) { 
+                    $suppliesCount++; 
+                }
+                $totalOfSuppliesAvailable += (($item->receivingCost/$item->receivingUnit))*$item->quantity; 
+            } 
         }
         
         $productsStocked = $this->Stock->all();
